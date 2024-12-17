@@ -1,7 +1,13 @@
 # To-Do List
 
 - [ ] Implementar backup de favoritos.
+    - [ ] background scripts
+    - [ ] content scripts
 - [ ] Criar organizador de favoritos.
+    - [ ] Opção de remover item dos favoritos
+    - [ ] Adicionar Categorias
+    - [ ] Remover Categorias
+    - [ ] Pré-visualização de sites
 - [ ] Implementar diagrama de organização de favoritos.
 - [ ] Implementar controle de versão de favoritos.
 - [ ] Implementar autenticação de usuário.
@@ -9,6 +15,7 @@
 - [ ] Criar API para controlar favoritos.
 - [ ] Adicionar suporte a múltiplos idiomas.
 - [ ] Criar documentação detalhada.
+- [ ] Modelo de Monetização.
 
 
 

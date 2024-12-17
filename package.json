@@ -1,0 +1,38 @@
+{
+  "name": "bookmark-manager",
+  "version": "1.0.0",
+  "description": "Um gerenciador de favoritos poderoso compatível com todos os navegadores web e com interface amigável",
+  "main": "dist/index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build:ts": "tsc --outDir dist",
+    "build:sass": "sass src/styles/styles.scss dist/styles.css",
+    "copy:manifest": "copyfiles -u 1 src/manifest.json dist/",
+    "copy:images": "copyfiles -u 1 src/images/**/* dist/",
+    "copy:html": "copyfiles -u 1 src/index.html dist/",
+    "build": "npm run build:ts && npm run build:sass && npm run copy:manifest && npm run copy:images",
+    "watch:ts": "tsc --watch",
+    "watch:sass": "sass --watch src/styles/styles.scss dist/styles.css",
+    "watch:html": "copyfiles -u 1 src/index.html dist/ --watch",
+    "Watch:manifest": "copyfiles -u 1 src/manifest.json dist/ --watch",
+    "watch": "npm-run-all --parallel watch:ts watch:sass watch:html watch:manifest"
+  },
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.x",
+    "typescript": "^5.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caio-venancio/bookmark-manager.git"
+  },
+  "author": "Caio Venâncio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caio-venancio/bookmark-manager/issues"
+  },
+  "homepage": "https://github.com/caio-venancio/bookmark-manager#readme"
+}
