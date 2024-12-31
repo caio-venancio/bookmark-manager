@@ -1,3 +1,7 @@
+// Aninhamento
+// A funcionalidade de aninhamento (nesting) no Sass permite organizar o código CSS de
+// forma hierárquica, tornando-o mais legível e manutenível. 
+
 * {
     margin: 0;
     padding: 0;
@@ -6,9 +10,10 @@
 
 :root {
     --color-background: white;
-    --color-primary: red ;/*#F8D238; /*old color: #FFD700*/
+    --color-primary: #F8D238; /*old color: #FFD700*/
     --color-primary-lighten: #faf7f1;
     --color-text: #4a4a4a;
+    --color-border:#ebebeb;
 }
 
 .body-popup{
@@ -35,6 +40,23 @@
     background: var(--color-primary);
     border-radius: 0 0 15px 15px;
     /* box-shadow: 0px 10px 5px lightblue; */
+}
+
+.tabs {
+    align-items: center;
+    border-bottom: 1px solid var(--color-border);
+    background: var(--color-background);
+    display: flex;
+    font-size: .8rem;
+
+    .tab{
+        cursor: pointer;
+        letter-spacing: .5px;
+        padding: 1rem 1.5rem .8rem 1.5rem;
+        text-transform: uppercase;
+        white-space: nowrap;
+        position: relative;    
+    }
 }
 
 .footer {

@@ -11,22 +11,27 @@
         <h1 style="color:white; font-size: 1.5rem; font-weight: 600;">Bookmark Manager</h1>
     </header>
     <main>
-        <div class="tabs"></div>
+        <div class="tabs">
+            <div class="tab">Backup</div>
+            <div class="tab">Organizar</div>
+            <div class="tab">Pro</div>
+        </div>
         <div class="tab-items">
-            <div class="tab-item">
+            <div id="Home" class="tab-item">
                 <h2>Início/Home</h2>
             </div>
-            <div class="tab-item">
+            <div id="Backup" class="tab-item hidden">
                 <h2>Backup</h2>
             </div>
-            <div class="tab-item">
+            <div id="Organizar" class="tab-item hidden">
                 <h2>Organizar</h2>
             </div>
-            <div class="tab-item">
+            <div id="Pro" class="tab-item hidden">
                 <h2>Pro</h2>
             </div>
         </div>
     </main>
     <footer class="footer"></footer>
+    <script src="scripts/index.js"></script>
 </body>
 </html>

@@ -12,7 +12,7 @@
     "copy:manifest": "copyfiles -u 1 src/manifest.json dist/",
     "copy:images": "copyfiles -u 1 src/images/**/* dist/",
     "copy:html": "copyfiles -u 1 src/index.html dist/",
-    "build": "npm run build:ts && npm run build:sass && npm run copy:manifest && npm run copy:images",
+    "build": "npm run build:ts && npm run build:sass && npm run copy:manifest && npm run copy:images && npm run copy:html",
     "watch:ts": "tsc --watch",
     "watch:sass": "sass --watch src/styles/styles.scss dist/styles.css",
     "watch:html": "copyfiles -u 1 src/index.html dist/ --watch",
